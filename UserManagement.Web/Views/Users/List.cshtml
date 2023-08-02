@@ -17,7 +17,7 @@
         <tbody>
             @foreach (var item in Model.Items)
             {
-                <tr>
+                <tr class='@(item.IsActive ? "active-user" : "non-active-user")'>
                     <td>
                         @item.Id
                     </td>
